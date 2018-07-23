@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--/* Links to our style.css file */-->
+  <!--<link rel="stylesheet" href="grids.css">-->
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">-->
+  <!--<link href="style.css">-->
+
+    <!-- Compiled and minified JavaScript -->
+  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>-->
+  <style>
+    #map {
+      height: 400px;
+      /* The height is 400 pixels */
+      width: 100%;
+      /* The width is the width of the web page */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <div id="searchBar">My Google Maps Demo <button id="mainButton">Search</button><br>
+    <!--<div class="input-field col s12">-->
+      <select placeholder="choose" id="type">
+          <option value="" disabled selected>Select your option</option>
+          <option value="art_gallery">Art Gallery</option>
+          <option value="library">Library</option>
+          <option value="movie_theatre">Movie Theaters</option>
+          <option value="park">Park</option>
+          <option value="shopping_mall">Shopping mall</option>
+          <option value="museum">Museums</option>
+          <option value="night_club">Nightclub</option>
+         </select>
+         <!--</div>-->
+         
+  <!--       <div class="input-field col s12">-->
+  <!--  <select>-->
+  <!--    <option value="" disabled selected>Choose your option</option>-->
+  <!--    <option value="1">Option 1</option>-->
+  <!--    <option value="2">Option 2</option>-->
+  <!--    <option value="3">Option 3</option>-->
+  <!--  </select>-->
+  <!--  <label>Materialize Select</label>-->
+  <!--</div>-->
+    </div>
+  </div>
+  <div id="map"></div>
+  <script src="style-map-code.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa1dfvcXoEUxnHQa3F5fB_pkXIykQ07T4&libraries=places&callback=initMap"></script>
+</body>

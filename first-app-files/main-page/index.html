@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--/* Links to our style.css file */-->
+    <link rel="stylesheet" href="grids.css">
+
+    <style>
+        #map {
+            height: 400px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="searchBar">My Google Maps Demo</<div>
+        <input type="text" id="input">
+        <button id="mainButton">Search</button><br>
+        
+        <select placeholder="choose" id="type">
+          <option value="" disabled selected>Select your option</option>
+          <option value="art_gallery">Art Gallery</option>
+          <option value="library">Library</option>
+          <option value="movie_theatre">Movie Theaters</option>
+          <option value="park">Park</option>
+          <option value="shopping_mall">Shopping mall</option>
+          <option value="museum">Museums</option>
+          <option value="night_club">Nightclub</option>
+         </select>
+    </div>
+
+
+    <!--The div element for the map -->
+    <div id="footer"></div>
+    <div id="map"></div>
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa1dfvcXoEUxnHQa3F5fB_pkXIykQ07T4&callback=initMap"></script>
+</body>

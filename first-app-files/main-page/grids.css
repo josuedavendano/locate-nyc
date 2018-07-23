@@ -1,0 +1,41 @@
+          /*body {*/
+              /*display: grid;*/
+              /*grid-template-columns: 2fr 1fr;*/
+              /*grid-template-rows: 50px 75px auto 75px;*/
+          /*    display: flex;*/
+          /*    flex-direction: column;*/
+          /*    align-items: center;*/
+          /*    height: 100vh;*/
+          /*}*/
+        #header{
+             grid-column-start: 1;
+              grid-column-end: 2;
+              grid-row-start: 1;
+              grid-row-end: 2;
+              display: flex;
+              background-color: skyblue;
+}
+          #searchBar {
+              grid-column-start: 1;
+              grid-column-end: 2;
+              grid-row-start: 2;
+              grid-row-end: 3;
+            
+          }
+
+          #map {
+              grid-column-start: 1;
+              grid-column-end: 2;
+              grid-row-start: 3;
+              grid-row-end: 4;
+          }
+
+          #footer {
+              grid-column-start: 1;
+              grid-column-end: 2;
+              grid-row-start: 4;
+              grid-row-end: 5;
+              background-color: red;
+            
+          }
+          
